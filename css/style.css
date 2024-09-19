@@ -1,3 +1,99 @@
+/* O asterísco aplica o css em TODAS AS TAGS
+                Usamos ele para fazer o reset (limpar) o css
+                padrão do navegador e aplicar em um único. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Define o tamanho do elemento */
+    line-height: 1.5;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: var(--text-color);
+
+}
+
+/* ------------------------------------------------------ */
+
 body {
-    background-color: aqua;
+    background: var(--background-color);
+}
+
+
+.title_hk {
+    font-family: "Trirong", serif;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--secondary-color);
+    text-shadow: 4px 4px #2e524c;
+}
+
+h1, h2 ,h3 ,h4 ,h5 ,h6 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.card {
+    border: 1px #74dbe9 solid;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px #7bf5f5;
+}
+
+.tamanho-50 {
+    width: 49%;
+    max-width: 49%;
+    color: #235750;
+}
+
+span {
+    color: #235750;
+}
+
+header, footer {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    color: var(--secondary-color)
+}
+
+header, h1 {
+    margin-bottom: 0;
+}
+
+.button {
+    border: 1px #cccccc solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* o hover é uma subclasse, quando temos uma subclasse
+   após ocorrer alguma interação ele é utilizado, nesse caso
+   quando passar o mouse em cima, ele altera a cor */
+.button:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
 }

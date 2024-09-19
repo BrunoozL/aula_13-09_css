@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap');
+
+* {
+    font-family: "Gowun Batang", serif;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-red {
+    color: #dc143c;
+}
+
+.text-cian {
+    color: #68e9d8;
+}
+
+.text-gold {
+    color: #b39909;
+}
+
+.text-L {
+    font-size: 30px;
+}

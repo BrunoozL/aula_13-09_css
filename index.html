@@ -3,85 +3,43 @@
 
     <head>
         <meta charset="UTF-8">
-        <!--<link href="/css/style.css" rel="stylesheel"> -->
+        <link href="/css/style.css" rel="stylesheet">
+        <link href="css/colors.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/text.css">
         
         <title>Document</title>
-
-        <style>
-
-            /* O asterísco aplica o css em TODAS AS TAGS
-                Usamos ele para fazer o reset (limpar) o css
-                padrão do navegador e aplicar em um único. */
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box; /* Define o tamanho do elemento */
-                line-height: 1.5;
-                font-family: Arial, Helvetica, sans-serif;
-
-            }
-            /* ------------------------------------------------------ */
-
-        body{
-                background: #000;
-            }
-
-
-            .title_hk {
-                font-family: "Trirong", serif;
-                font-size: 100px;
-                text-align: center;
-                font-weight: 100;
-                font-style: normal;
-                color: #ffffff;
-                text-shadow: 4px 4px #2e524c;
-            }
-
-            h1, h2, h3, h4, h5, h6 {
-                text-align: center;
-                color: #68e9d8;
-            }
-
-            .container {
-                padding-left: 20%;
-                padding-right: 20%;
-            }
-
-            .card {
-                border: 1px #74dbe9 solid;
-                padding: 15px;
-                border-radius: 10px;
-                margin: 10px auto;
-                box-shadow: 0 4px 8px #7bf5f5;
-            }
-
-            .tamanho-50 {
-                width: 49%;
-                max-width: 49%;
-                color: #68e9d8;
-            }
-
-
-        </style>
 
     </head>
     
     <body>
-
-        <p class="title_hk">Hollow Knight</p>
+        
+        <header>
+            <!-- Podemos utilizar as variáveis no CSS inline -->
+            <h1 style="color: var(--secondary-color);">Bem vindo ao meu SITE!</h1>
+            <p class="title_hk">Hollow Knight</p>
+        </header>
 
         <div class="container">
 
             <h1>Mana</h1>
-            <p style="color: #ffffff; text-align: center;">Sapo</p>
+            <h2>HP</h2>
+            <p style="text-align: center;" class="text-bold text-gold">Sapo</p>
 
             <div class="card tamanho-50">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolor,
-                 eos nemo impedit autem, fugiat explicabo perferendis laudantium minus maiores
+                <span class="text-L">L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolor,
+                 eos nemo impedit autem, <span class="text-bold text-gold"> fugiat explicabo perferendis </span> laudantium minus maiores
                  iusto perspiciatis porro dicta sequi cum, dolorum in cupiditate amet?
+
+                 <button class="button" type="button">PASSE O MOUSE</button>
             </div>
 
         </div>
+
+        <!-- Footer = rodapé -->
+        <footer>
+            <p>&copy; 2024 Fatec Jahu. Todos os direitos reservados.</p>
+            <p>Desenvolvido por: <b>Bruno Righi</b></p>
+        </footer>
     
     </body>
 </html>
